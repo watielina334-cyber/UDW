@@ -1,0 +1,75 @@
+*{
+  box-sizing:border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body{
+  margin:0;
+  background: #f4f6fb;
+  color:#111827;
+}
+
+/* Card form */
+.form-wrapper{
+  max-width: 720px;
+  margin: 28px auto;
+  background:#fff;
+  padding: 22px 22px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(17,24,39,0.06);
+}
+
+.form-wrapper h3{
+  margin: 6px 0 18px;
+  font-size: 20px;
+  text-align: left;         /* biar admin look */
+  font-weight: 700;
+}
+
+/* input */
+.form-control{
+  width:100%;
+  padding: 10px 12px;       /* lebih compact */
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background:#fff;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.form-control:focus{
+  outline:none;
+  border-color:#f97316;
+  box-shadow: 0 0 0 4px rgba(249,115,22,0.18);
+}
+
+/* textarea lebih masuk akal tingginya */
+textarea.form-control{
+  min-height: 72px;
+  resize: vertical;
+}
+
+/* tombol */
+.btn-submit{
+  width:100%;
+  padding: 11px 12px;
+  background:#f97316;
+  color:#fff;
+  border:none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor:pointer;
+  transition: 0.2s ease;
+}
+
+.btn-submit:hover{
+  background:#ea580c;
+  transform: translateY(-1px);
+}
+
+.btn-submit:active{
+  transform: translateY(0);
+}

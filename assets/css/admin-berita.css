@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fef4f6;
+    color: #111827;
+    padding: 24px;
+}
+
+/* judul  */
+h3{
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+/* link tambah */
+a{
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 12px 0 16px;
+    border: 0;
+    border-top: 1px solid #d1d5db;
+}
+
+/* table */
+table {
+    width: 100%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f9fafb;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+/* baris selang-seling */
+tr:nth-child(even) td {
+    background: #fcfcfd;
+}
+
+td:first-child, th:first-child{
+    width: 50px;
+}
+
+/* kolom tanggal */
+td:nth-child(3), th:nth-child(3) {
+    width: 120px;
+    white-space: nowrap;
+}
+
+/* aksi biar ga kepanjangan */
+td:last-child, th:last-child {
+    width: 140px;
+    white-space: nowrap;
+}
+
+/* link edit/hapus dibedain warna */
+td a[href*="edit"] {
+    color: #0d6efd;
+}
+
+td a[href*="hapus"] {
+    color: #dc2626;
+}
+
+/* ini biar jadi kotak rapi, meski sudah ada style inline */
+div [style*="background:#f8d7da"] {
+    max-width: 1100px;
+    border-radius: 6px;
+    border: 1px solid #f5c6cb;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* STYLE ADMIN BERITA TAMBAH */
+.berita-wrapper {
+    max-width: 720px;
+    margin: 28px auto;
+    background: #fff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 25px rgba(17,24,39,0.06);
+}
+
+.berita-wrapper h3{
+    margin: 6px 0 18px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.berita-control {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.berita-control:focus{
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.18);
+}
+
+textarea.berita-control{
+  min-height: 120px;
+  resize: vertical;
+}
+
+.berita-btn{
+  width: 100%;
+  padding: 11px 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.berita-btn:hover{
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}

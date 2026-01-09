@@ -1,0 +1,168 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  padding: 24px;
+}
+
+/* CARD PAGE */
+.page{
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 18px 22px;
+  box-shadow: 0 10px 25px rgba(17, 24, 39, 0.06);
+}
+
+/* TITLE */
+.page h3{
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+/* BUTTON TAMBAH */
+.btn-add{
+  display: inline-block;
+  text-decoration: none;
+  background: #0d6efd;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.btn-add:hover{
+  background: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+.btn-add:active{
+  transform: translateY(0);
+}
+
+/* HR */
+hr{
+  margin: 14px 0 16px;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* WRAP TABLE (AMAN DI LAYAR KECIL) */
+.table-wrap{
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* TABLE */
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #fff;
+  min-width: 980px; /* biar kolom ga kepotong kalau layar kecil */
+}
+
+/* HEADER */
+.table th{
+  background: #f9fafb;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  font-weight: 800;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* CELL */
+.table td{
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+/* STRIPED ROW */
+.table tr:nth-child(even) td{
+  background: #fcfcfd;
+}
+
+/* WIDTH CONTROL */
+.table th:nth-child(1),
+.table td:nth-child(1){
+  width: 60px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2){
+  min-width: 160px;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3){
+  min-width: 420px; /* Deskripsi */
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4){
+  min-width: 200px; /* Prodi */
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5){
+  min-width: 230px; /* Kontak */
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6){
+  min-width: 140px;
+  white-space: nowrap;
+}
+
+/* LINK AKSI */
+.link-edit,
+.link-del{
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.link-edit{
+  color: #0d6efd;
+}
+
+.link-del{
+  color: #dc2626;
+}
+
+.link-edit:hover,
+.link-del:hover{
+  text-decoration: underline;
+}
+
+/* SEPARATOR */
+.sep{
+  color: #9ca3af;
+  margin: 0 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+  body{ padding: 14px; }
+  .page{ padding: 14px; border-radius: 10px; }
+}

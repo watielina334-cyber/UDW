@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+/* wrapper tengah */
+.admin-wrap {
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+/* card dshboard */
+.admin-card {
+    width: 100%;
+    max-width: 520px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* judul */
+.admin-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.admin-subtitle {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 18px;
+}
+
+/* menu */
+.admin-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* BTN UMUM */
+.btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1e4ed8;
+}
+
+.btn-danger {
+    background-color: #dc2626;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #b91c1c;
+}
