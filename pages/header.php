@@ -13,7 +13,7 @@
       <li><a href="index.php" class="nav-link"> Home</a></li>
       <li><a href="index.php?page=profil" class="nav-link"> Profil</a></li>
       <li><a href="index.php?page=fakultas" class="nav-link"> Fakultas</a></li>
-      <li><a href="index.php?page=berita"  class="nav-link"> Berita</a></li>
+      <li><a href="index.php?page=berita" class="nav-link"> Berita</a></li>
       <li><a href="index.php?page=kontak" class="nav-link"> Kontak</a></li>
     </ul>
 

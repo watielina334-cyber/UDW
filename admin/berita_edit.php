@@ -49,7 +49,7 @@ if (isset($_POST['update'])) {
 <div class="berita-wrapper">
 <h3 class="berita-label">Edit Berita</h3>
 
-<form method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">              <!-- POST adalah metode HTTP untuk mengirim data secara tersembunyi melalui body request-->
     <input type="hidden" name="foto_lama" value="<?= $data['foto']; ?>">
 
     <div class="berita-grid">

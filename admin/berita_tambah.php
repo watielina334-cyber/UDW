@@ -44,7 +44,7 @@ if (isset($_POST['simpan'])) {
     <h3>Tambah Berita</h3>
 
     <form method="post" enctype="multipart/form-data">
-        <label class="berita-label">Judul Berita</label>
+        <label class="berita-label">Judul Berita</label>                    <!-- <label> adalah elemen HTML yang digunakan untuk memberi keterangan atau nama pada input form.-->
         <input name="judul" class="berita-control" placeholder="Contoh: Pengumuman Libur Semester" required>
 
         <div class="berita-grid">
@@ -60,11 +60,11 @@ if (isset($_POST['simpan'])) {
         </div>
 
         <label class="berita-label">Isi Berita</label>
-        <textarea name="isi" class="berita-control" placeholder="Tulis isi berita..." required></textarea>
+        <textarea name="isi" class="berita-control" placeholder="Tulis isi berita..." required></textarea>          <!-- <textarea> adalah elemen HTML yang digunakan untuk input teks panjang atau multi-baris.-->
 
         <label class="berita-label">Foto (opsional)</label>
-        <input type="file" name="foto" class="berita-control" accept=".jpg,.jpeg,.png,.webp">
+        <input type="file" name="foto" class="berita-control" accept=".jpg,.jpeg,.png,.webp">                   <!-- accept adalah atribut pada elemen HTML <input type="file"> yang digunakan untuk membatasi jenis file yang boleh dipilih oleh pengguna.-->
 
-        <button name="simpan" class="berita-btn">Simpan</button>
+        <button name="simpan" class="berita-btn">Simpan</button>                                <!-- <button> adalah elemen HTML yang digunakan untuk membuat tombol yang dapat diklik untuk menjalankan suatu aksi, terutama pada form.-->
     </form>
 </div>

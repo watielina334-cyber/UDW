@@ -2,9 +2,9 @@
 session_start();
 include "../config/database.php";
 
-$error = "";
+$error = "";            # menyimpan pesan error login
 
-if (isset($_POST['login'])) {
+if (isset($_POST['login'])) {                       # isset() digunakan untuk mengecek apakah sebuah variabel sudah ada dan memiliki nilai.
     $username = $_POST['username'];
     $password = md5($_POST['password']);
 
@@ -13,8 +13,8 @@ if (isset($_POST['login'])) {
          WHERE username='$username' AND password='$password'"
     );
 
-    if (mysqli_num_rows($query) == 1) {
-        $_SESSION['admin'] = $username;
+    if (mysqli_num_rows($query) == 1) {           # Menghitung jumlah baris data hasil query == 1
+        $_SESSION['admin'] = $username;           # $_session: digunakan untuk sebagai wadah untuk menyimpan username ke session menadakan bahwa admin login
         header("Location: dashboard.php");
         exit;
     } else {
@@ -22,6 +22,7 @@ if (isset($_POST['login'])) {
     }
 }
 ?>
+
 <!doctype html>
 <html lang="id">
 <head>

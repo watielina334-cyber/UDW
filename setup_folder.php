@@ -42,14 +42,14 @@ $files = [
 // Buat folder
 foreach ($folders as $folder) {
     if (!is_dir($folder)) {
-        mkdir($folder, 0777, true);
+        mkdir($folder, 0777, true);         //0777 → izin akses (read, write, execute)
         echo "Folder dibuat: $folder <br>";
     }
 }
 
 // Buat file
 foreach ($files as $file) {
-    if (!file_exists($file)) {
+    if (!file_exists($file)) {          //file_exists() → cek file sudah ada atau belum
         file_put_contents($file, "<?php\n// $file\n");
         echo "File dibuat: $file <br>";
     }

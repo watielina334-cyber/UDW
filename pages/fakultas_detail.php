@@ -22,7 +22,8 @@ if (!$data) {
 
         <div class="detail-card detail-main">
             <h2>Sejarah / Deskripsi</h2>
-            <p class="detail-text"><?php echo nl2br($data['deskripsi']); ?></p>
+        </div>
+            <p class="detail-text"><?php echo nl2br($data['deskripsi']); ?></p>         <!-- nlbr: Mengubah enter (\n) di database jadi <br> Supaya paragraf tetap rapi di HTML-->
         </div>
 
         <div class="detail-card detail-side">
